@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tabel_layout</string>
+    <string name="logginform">Login form</string>
+    <string name="tpassword">password</string>
+    <string name="login">login</string>
+    <string name="tlogin">username</string>
+</resources>

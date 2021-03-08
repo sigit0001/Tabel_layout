@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/TableRow_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="146dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/tlogin"
+            app:srcCompat="@drawable/sayur" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TabelRow_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/logginform"
+            android:textColor="@color/cLabel"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TabelRow_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:importantForAutofill="no"
+            android:hint="@string/tlogin"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:inputType="text"
+            android:textColor="@color/black" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TabelRow_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tpassword"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:hint="@string/tpassword"
+            android:layout_marginStart="10dp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_span="2"
+            android:background="@color/teal_200"
+            android:text="@string/login"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </TableRow>
+</TableLayout>
